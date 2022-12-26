@@ -22,7 +22,6 @@ FEEDS = {
         'item_classes': [BestmoviesItem, 'bestmovies.items.BestmoviesItem'],
         'fields': ['rating', 'name_russian', 'name_english', 'year', "kinopoisk_rating"],
         'indent': 4,
-        'overwrite': True,
         'item_export_kwargs': {
             'export_empty_fields': True,
         },
