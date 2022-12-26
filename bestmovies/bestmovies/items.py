@@ -7,6 +7,8 @@ import scrapy
 
 
 class BestmoviesItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    rating = scrapy.Field()
+    name_russian = scrapy.Field()
+    name_english = scrapy.Field()
+    year = scrapy.Field()
+    kinopoisk_rating = scrapy.Field()
