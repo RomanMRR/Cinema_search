@@ -6,8 +6,10 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+import time
 
 from bestmovies.items import BestmoviesItem
+
 
 BOT_NAME = 'bestmovies'
 
@@ -22,6 +24,7 @@ FEEDS = {
         'item_classes': [BestmoviesItem, 'bestmovies.items.BestmoviesItem'],
         'fields': ['rating', 'name_russian', 'name_english', 'year', "kinopoisk_rating"],
         'indent': 4,
+        'overwrite': True,
         'item_export_kwargs': {
             'export_empty_fields': True,
         },

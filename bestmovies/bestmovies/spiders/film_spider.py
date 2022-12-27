@@ -5,10 +5,8 @@ from re import search
 from urllib.parse import urlencode
 from bestmovies.items import BestmoviesItem
 from dotenv import load_dotenv, find_dotenv
-import logging
 
 load_dotenv(find_dotenv())
-logging.basicConfig(level=logging.INFO, filename="py_log.log", filemode="w")
 
 API_KEY = os.getenv('API_KEY')
 
