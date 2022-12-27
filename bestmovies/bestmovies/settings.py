@@ -17,7 +17,7 @@ SPIDER_MODULES = ['bestmovies.spiders']
 NEWSPIDER_MODULE = 'bestmovies.spiders'
 
 FEEDS = {
-    'data/%(name)s/%(name)s_%(time)s.csv': {
+    'data/%(name)s/%(name)s.csv': {
         'format': 'csv',
         'encoding': 'utf8',
         'store_empty': False,
