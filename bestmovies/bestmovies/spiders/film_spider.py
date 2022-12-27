@@ -35,7 +35,6 @@ class FilmSpider(scrapy.Spider):
     main_url = "https://www.kinopoisk.ru"
 
     def start_requests(self):
-
         yield scrapy.Request(url=get_proxy_url(self.start_url), callback=self.parse)
 
     def parse(self, response):
