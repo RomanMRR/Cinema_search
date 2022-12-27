@@ -1,3 +1,4 @@
+import logging
 import os
 
 import scrapy
@@ -12,6 +13,7 @@ API_KEY = os.getenv('API_KEY')
 
 
 def get_year(year_string, film_name):
+    # Получаем год выпуска из строки
     try:
         year = search(r"(\d+)", year_string).group(1)
         return year
@@ -21,6 +23,7 @@ def get_year(year_string, film_name):
 
 
 def get_proxy_url(url):
+    # Получаем url адрес с использованием прокси-сервиса
     payload = {'api_key': API_KEY, 'url': url}
     proxy_url = 'https://proxy.scrapeops.io/v1/?' + urlencode(payload)
     return proxy_url
