@@ -60,7 +60,7 @@ docker cp bestmovies:/usr/src/app/data .
 ```
 Нужный csv файл будет в папке data
 
-### Сменя прокси-сервера
+### Смена прокси-сервера
 
 Если вы хотите использовать свой прокси-сервер, то можно занести его API ключ в файл `Cinema_search/bestmovies/bestmovies/.env`. А также определить его работу в функцие `get_proxy_url` в файле `Сinema_search\bestmovies\bestmovies\spiders\film_spider.py`.
 
